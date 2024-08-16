@@ -1,0 +1,30 @@
+body{
+    background-color: #4a4a4a;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1000px;
+    margin: 140px;
+    background-color: #fff;
+    display: table;
+}
+
+.container .box .box-row{
+    display: table-row;
+}
+
+.container .box .box-cell{
+    display: table-cell;
+    width: 25%;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .box .box-cell.box1{
+background-color: #ff00ea;
+}
+.container .box .box-cell.box2{
+background-color: #fbff23;
+}
