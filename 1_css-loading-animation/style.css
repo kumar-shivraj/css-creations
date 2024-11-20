@@ -1,25 +1,24 @@
 body {
-  background-color: #2b2b2b;
+  background: #2b2b2b;
   margin: 0;
   padding: 0;
 }
-
 .loader {
+  height: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
-
 .loader span {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   color: rgba(255, 255, 255, 0.1);
   display: inline-block;
   transition: all 0.5s;
-  animation: animate 2s infinite;
+  /* animation: loader 2s ease-in-out infinite; */
+  animation: loader 2s infinite;
 }
-
 .loader span:nth-child(1) {
   animation-delay: 0.1s;
 }
@@ -41,7 +40,7 @@ body {
 .loader span:nth-child(7) {
   animation-delay: 0.7s;
 }
-@keyframes animate {
+@keyframes loader {
   0% {
     color: rgba(255, 255, 255, 0.1);
     transform: translateY(0);
@@ -51,11 +50,10 @@ body {
     color: yellow;
     transform: translateY(-15px);
     margin-left: 10px;
-    text-shadow: 0 15px 5px rgba(0,0,0,1);
+    text-shadow: 0 15px 5px rgba(0, 0, 0, 1);
   }
-  100% {
-    color: rgba(255, 255, 255, 0.1);
+  /* 100% {
+    color: yellow;
     transform: translateY(0);
-    margin-left: 0;
-  }
+  } */
 }
