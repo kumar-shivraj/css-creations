@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: #003444;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardbox {
+  perspective: 500px;
+  margin: 15px;
+}
+
+.card {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  transition: 1s;
+  transform-style: preserve-3d;
+  transition: 1s ease;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+.twitter {
+  background-color: #00aced;
+}
+.googleplus {
+  background-color: #dd4b39;
+}
+
+.card-front,
+.card-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  backface-visibility: hidden;
+  color: #fff;
+}
+
+.card-front {
+  font-size: 40px;
+}
+.card-back {
+  font-size: 30px;
+}
+
+.cardbox:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
